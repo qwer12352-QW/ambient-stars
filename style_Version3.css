@@ -1,0 +1,29 @@
+:root{
+  --bg:#020212;
+  --control-bg: rgba(255,255,255,0.06);
+  --text: #e6eef8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+}
+.controls{
+  display:flex;
+  gap:12px;
+  padding:12px;
+  align-items:center;
+  background:var(--control-bg);
+}
+.controls label{font-size:14px}
+#canvasContainer{
+  flex:1;
+  display:block;
+}
+button{padding:6px 10px;border-radius:6px;border:0;background:#3b82f6;color:white;cursor:pointer}
+input[type=range]{vertical-align:middle}
