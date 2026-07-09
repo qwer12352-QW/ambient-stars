@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ambient Stars — Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <!-- p5.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <!-- Tone.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tone@14.7.77/build/Tone.min.js"></script>
+</head>
+<body>
+  <div class="controls">
+    <label>Color Hue: <input id="hue" type="range" min="0" max="360" value="220"></label>
+    <label>Intensity: <input id="intensity" type="range" min="0" max="1" step="0.01" value="0.5"></label>
+    <button id="startBtn">Start Sound</button>
+  </div>
+  <main id="canvasContainer"></main>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
